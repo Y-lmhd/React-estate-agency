@@ -6,3 +6,6 @@ html, body{
   box-sizing: border-box;
   font-family: Poppins , Arial, Helvetica, sans-serif;
 }
+main{
+  min-height: 90vh;
+}

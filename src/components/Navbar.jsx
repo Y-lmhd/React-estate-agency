@@ -1,5 +1,7 @@
 import React from "react";      
+import { Link } from "react-router-dom";
 import './Navbar.css'
+
 
 const Navbar = () => {
     return (
@@ -10,21 +12,26 @@ const Navbar = () => {
                 </div>
                 <nav className="navigation-menu-top">
                     <ul>
-                        <li><a to="/">HOME</a></li>
-                        <li><a href="#">Property</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Contact</a></li>
+
+                        <li><Link to="/">Home</Link></li>
+                        <li><Link to="/property">Property</Link></li>
+                        <li><Link to="/about">About</Link></li>
+                        <li><Link to="/contact">Contact</Link></li>
                         <li>
-                            <a href="#">
+                            <div>
                                 <i class="fas fa-phone"></i>
                                 +01 (02) 030 4050
-                            </a>
+                            </div>
                         </li>
                     </ul>
-                </nav>
+                </nav>   
             </div>
-        </header>
+            
+        </header>     
     );
 }
 
 export default Navbar; 
+
+
+
