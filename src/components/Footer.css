@@ -3,3 +3,72 @@ footer{
     background-color: #333;
     color: #eee;
 }
+.footer-content{
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px 15px;
+}
+/**
+* Global rules footer 
+*/
+.footer-content ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.footer-content ul{
+    list-style: none;
+}
+.footer-content a{
+    color: #eee;
+    text-decoration: none;
+}
+
+/** End global Rules **/
+
+.footer-top{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-arround;
+    padding: 25px 0;
+}
+.footer-top > div{
+    padding: 0 15px;
+}
+.footer-estate-agency{
+    flex: 0 0 40%;
+}
+.footer-company-links{
+    flex-grow: 1;
+}
+.footer-international-links{
+    flex-grow: 1;
+}
+
+
+.footer-bottom{
+    padding: 25px 15px;
+    border-top: 1px solid #ccc;
+}
+.footer-bottom-nav{
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-around;
+}
+.footer-bottom-nav ul{
+    display: inline-flex;
+}
+.footer-bottom-nav li{
+   padding: 10px 15px;
+}
+
+
+
+
+
+
+@media (max-width: 768px) { 
+    .footer-top > div{
+        padding: 0;
+    }
+ }
